@@ -1,0 +1,12 @@
+body{
+    background: yellow;
+}
+
+h1{
+    font-size: 60px !important;
+}
+
+p{
+    font-size:  25px;
+    color: rgb(46, 47, 48);
+}

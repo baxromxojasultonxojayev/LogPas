@@ -1,0 +1,31 @@
+<%- include('headers') %> 
+
+<section class="vh-100 d-flex justify-content-center align-items-center">
+    <div class="container d-flex justify-content-center align-items-center flex-column">
+        <h1>Log Page</h1>
+
+        <% if(error) {%> 
+            <div class="alert alert-danger"><%= error %> </div>
+        <% } %> 
+        <form class="ms-4" action="/login" method="POST">
+            <label for="">
+                <input type="text" class="form-control mt-4" 
+                name="login" placeholder="Login" required autocomplete="off">
+            </label>
+            <label for="">
+                <input type="password" class="form-control" 
+                name="password" placeholder="Password" required autocomplete="off">
+            </label>
+            <button class="btn btn-success">Submit</button>
+
+        </form>
+        <div class="text-center mt-4">
+            <p >If You have not registrated yet, please click this button</p>
+            <a href="/signup" class="w-50 btn btn-danger">SignUp</a>
+        </div>
+    </div>
+</section>
+
+
+
+<%- include('footer')  %> 
